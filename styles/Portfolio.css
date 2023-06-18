@@ -1,0 +1,261 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #FFDBC5;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  font-family: 'Rubik', sans-serif;
+}
+
+.space{
+padding-top: 65px;
+}
+
+.header {
+background-color: #840234;
+box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+position: fixed;
+width: 100%;
+z-index: 3;
+}
+
+.header ul {
+margin: 5;
+padding: 0;
+list-style: none;
+overflow: hidden;
+background-color: #840234;
+}
+
+.header li a {
+display: block;
+height: 100%;
+padding: 20px 20px;
+color: #FFDBC5;
+text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  transition: 1s ease;
+background-color: rgb(221, 152, 127);
+color: #840234;
+}
+
+.header .logo {
+display: block;
+float: left;
+height: 2.5em;
+/* font-size: 2em; */
+padding: 10px 20px;
+text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+clear: both;
+max-height: 0;
+transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+cursor: pointer;
+float: right;
+padding: 28px 20px;
+position: relative;
+user-select: none;
+}
+
+.header .menu-icon .nav-icon {
+background: #FFDBC5;
+display: block;
+height: 2px;
+position: relative;
+transition: background .2s ease-out;
+width: 18px;
+}
+
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+background: #FFDBC5;
+content: '';
+display: block;
+height: 100%;
+position: absolute;
+transition: all .2s ease-out;
+width: 100%;
+}
+
+.header .menu-icon .nav-icon:before {
+top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+transform: rotate(-45deg);
+top:0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+transform: rotate(45deg);
+top:0;
+}
+
+
+@media (min-width: 48em) {
+.header li {
+  float: left;
+}
+.header li a {
+  padding: 20px 30px;
+}
+.header .menu {
+  clear: none;
+  float: right;
+  max-height: none;
+}
+.header .menu-icon {
+  display: none;
+}
+}
+
+hr{
+width: 90%;
+height: 2px;
+background-color: #f24432;
+border: none;
+}
+
+.pageName{
+  font-family: 'Alkatra', cursive;
+  color: #840234;
+  height: 10vh;
+  font-size: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 5%;
+  background-color: #FFDBC5;
+  position: relative;
+  font-weight: 600;
+}
+
+.pageName:after{
+  content:'';
+  height: 2px;
+  width: 30vw;
+  background:#f24432;
+  position:relative;
+  margin:8px;
+  left:0; 
+  right:0; 
+}
+  .single-item, .content {
+    text-align: center;
+  }
+
+  .image , .content {
+    transition: 0.7s all;
+    border-radius: 3px;
+  }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .single-item , .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .image ,.content {
+    transition: 0.3s auto;
+    border-radius: 3px;
+    width: 25rem;
+  }
+
+  .single-item {
+    display: flex;
+    position: relative;
+    margin: 0rem 2rem 2rem 2rem;
+  }
+
+  .single-item .image {
+    /* width: 100%; */
+    margin-bottom: -4%;
+  }
+
+  @media screen and (max-width: 48em) {
+    .single-item .image{
+       width: 100%;
+      margin-bottom: -4%; 
+    }
+  } 
+
+  .single-item .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* background-color: rgba(0,0,0,.2); */
+    color: #FFDBC5;
+    opacity: 0;
+    padding-top: 35%;
+    font-family: 'Alkatra', cursive;
+    font-size: 1.8rem;
+  }
+
+  .single-item:hover .content{
+    opacity: 1;
+  }
+
+  .single-item:hover .image{
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
+  }
+/* 
+  @media screen and (max-width: 48em) {
+    .single-item{
+        max-width: 1rem;
+        margin: 1%;
+    }
+  } */
+
+  /* @media screen and (max-width: 768px) {
+    .single-item{
+        float: none;
+        max-width: 48%;
+        margin: 1%;
+    }
+  } */
