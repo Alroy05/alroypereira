@@ -190,11 +190,22 @@ hr{
     background-color: #FFDBC5;
   }
 
+
   .profileImage{
     display: flex;
     /* padding-left: 30%; */
     width: 300px;
     height: 70vh;
+  }
+
+  @media (max-width: 450px){
+    .profileImage{
+      height: 55vh;
+    }
+
+    .imageContainer{
+      height: 57vh;
+    }
   }
 
   .wrapDes{
@@ -249,12 +260,44 @@ hr{
     font-size: large;
   }
 
+  @media (max-width: 450px){
+    .wrapDes{
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0rem 2rem 0rem 2rem;
+    }
+
+    .description h1 {
+      display: flex;
+      width: 100%;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .description{
+      align-items: center;
+      justify-content: center;
+    }
+
+    .points{
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
   .wrapSkills{
     font-family: 'Rubik', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+  }
+
+  @media (max-width: 450px) {
+    .wrapSkills{
+      padding: 0rem 2rem 0rem 2rem;
+    }
   }
   
   .skill{

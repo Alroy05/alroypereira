@@ -306,8 +306,14 @@
   }
 
   @media (max-width: 70em){
-    .mail-name ,.mail-address,.mail-subject,.mail-message {
+    .mail-address{
       width: 90%;
+      margin-top: 0px;
+      margin-bottom: 16px;
+    } 
+    
+    .mail-name,.mail-subject,.mail-message {
+      width: 89%;
     }
     .mail-wrapper {
       width: 100%;
