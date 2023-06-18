@@ -200,11 +200,11 @@ hr{
 
   @media (max-width: 450px){
     .profileImage{
-      height: 55vh;
+      height: 58vh;
     }
 
     .imageContainer{
-      height: 57vh;
+      height: 60vh;
     }
   }
 
@@ -262,27 +262,35 @@ hr{
 
   @media (max-width: 450px){
     .wrapDes{
+      display: flex;
       align-items: center;
       justify-content: center;
-      width: 100%;
-      padding: 0rem 2rem 0rem 2rem;
+      width: 20rem;
+      /* padding: 0rem 2rem 0rem 2rem; */
+      flex-direction: column;
     }
 
     .description h1 {
       display: flex;
-      width: 100%;
+      width: 20rem;
       align-content: center;
       justify-content: center;
+      text-align: center;
     }
 
-    .description{
-      align-items: center;
-      justify-content: center;
+    .description span{
+      font-style: none;
+      display: flex;
+      text-align: justify;
     }
 
     .points{
-      padding-left: 2rem;
-      padding-right: 2rem;
+      padding-left: 0.1rem;
+      /* padding-right: 2rem; */
+    }
+
+    .pt2{
+      width: 90%;
     }
   }
 

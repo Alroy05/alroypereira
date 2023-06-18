@@ -212,6 +212,12 @@ border: none;
   margin-bottom: 4%;
 }
 
+@media (max-width:25em) {
+  .education-container{
+    padding-left: 1.1rem;
+  }
+}
+
 .name ul li{
   font-size: 1.1rem;
   text-transform: uppercase;
