@@ -159,6 +159,15 @@ body{
   font-size: 5rem;
 }
 
+@media (max-width: 48em) {
+  .mainName {
+    padding: 15vh 0vw 0vh 8vw;
+  }
+  .mainName h1{
+    font-size: 4;
+  }
+}
+
 .subTitle{
   height: 10vh;
   display: flex;
