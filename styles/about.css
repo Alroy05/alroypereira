@@ -200,11 +200,11 @@ hr{
 
   @media (max-width: 450px){
     .profileImage{
-      height: 58vh;
+      height: 66vh;
     }
 
     .imageContainer{
-      height: 60vh;
+      height: 68vh;
     }
   }
 
@@ -270,6 +270,10 @@ hr{
       flex-direction: column;
     }
 
+    .description {
+      word-wrap: break-word;
+    }
+
     .description h1 {
       display: flex;
       width: 20rem;
@@ -291,6 +295,10 @@ hr{
 
     .pt2{
       width: 90%;
+    }
+
+    .word-wrap {
+      word-wrap: break-word;
     }
   }
 
