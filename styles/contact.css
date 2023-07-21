@@ -179,13 +179,16 @@
     display: flex;
     margin: 1rem;
     height: 100px;
-    width: 600px;
+    width: 300px;
+    padding-left: 10px;
     background-color: rgb(242, 68, 50,.25);
+    border-radius: 10px;
   }
 
   .wrap-icon {
     display: flex;
     /* background-color: #e6c3bf; */
+    margin: 10px;
     width: 15%;
     align-items: center;
     justify-content: center;
@@ -194,6 +197,10 @@
   @media (max-width: 48em){
     .wrap-icon {
       width: 4.5rem;
+      margin: 5px;
+    }
+    .outer-div {
+      padding-left: 0px;
     }
   }
 
@@ -254,6 +261,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
   }
 
   .mail-name ,.mail-address{
