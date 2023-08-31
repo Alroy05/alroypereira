@@ -240,6 +240,12 @@ body{
     color: rgb(144, 13, 13);
 }
 
+.fa-x-twitter {
+  transition: all .2s ease-out;
+    text-decoration: none;
+    color: rgb(144, 13, 13);
+}
+
 .fa-linkedin-in:hover,.fa-github:hover,.fa-x-twitter:hover,.fa-instagram:hover,.fa-envelope:hover{
   transform: scale(1.1);
 }
